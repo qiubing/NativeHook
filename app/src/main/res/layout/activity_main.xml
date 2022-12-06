@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/initXHook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="初始化xHook" />
+
+    <Button
+        android:id="@+id/threadHookInit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启Thread Hook" />
+
+    <Button
+        android:id="@+id/hookThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/threadHookInit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Hook 新建Thread" />
+
+    <Button
+        android:id="@+id/logHookInit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启日志Hook" />
+
+    <Button
+        android:id="@+id/hookLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logHookInit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Hook Native日志打印" />
+
+    <Button
+        android:id="@+id/refreshXHook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始Hook" />
+
+    <Button
+        android:id="@+id/closeXHook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束Hook" />
+
+</LinearLayout>
